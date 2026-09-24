@@ -32,3 +32,5 @@ Thumbs.db
 # misc
 coverage/
 *.pem
+
+.env
