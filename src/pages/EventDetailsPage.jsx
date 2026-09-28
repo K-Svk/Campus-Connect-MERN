@@ -3,9 +3,9 @@ import { Link, useParams } from "react-router";
 function EventDetailsPage({ events }) {
     const { eventId } = useParams();
 
-    const selectedEvent = events.find(
-        (event) => event._id === eventId
-    );
+    const selectedEvent = events.find(function (event) {
+        return event._id === eventId;
+    });
 
     if (selectedEvent === undefined) {
         return (
@@ -44,8 +44,7 @@ function EventDetailsPage({ events }) {
                 </p>
 
                 <p>
-                    <strong>Location:</strong>{" "}
-                    {selectedEvent.location}
+                    <strong>Location:</strong> {selectedEvent.location}
                 </p>
             </div>
 
