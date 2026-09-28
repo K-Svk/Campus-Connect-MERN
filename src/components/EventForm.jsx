@@ -66,7 +66,7 @@ function EventForm({ onAddEvent, editingEvent, onUpdateEvent, }) {
       onUpdateEvent(updatedEvent);
     } else {
       const newEvent = {
-        id: Date.now(),
+        //id: Date.now(),
         title: formData.title,
         category: formData.category,
         date: formData.date,
